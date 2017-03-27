@@ -1,42 +1,168 @@
 <!DOCTYPE HTML>
 <html lang= "en">
 <head>
-<meta charset = "UTF-8"/>
-<meta name ="author" content ="Suyash Shekhar" />
-<meta name = "description" content = "Personal Website" />
-<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Suyash's Evil Lair</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
- 
- <style>
-        body {
-                padding: 15px;
-                text-align: center;
-        } 
+    <meta charset = "UTF-8"/>
+    <meta name ="author" content ="Suyash Shekhar" />
+    <meta name = "description" content = "Personal Website" />
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Suyash's Evil Lair</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-        a {
-             display: inline-block;
-             vertical-align: top;
-        }   
+    <style>
+            a {
+               display: inline-block;
+               vertical-align: top;
+           }   
 
-        ul.new {
+           ul.new {
             list-style-position: inside;
             text-align: center;
         }
 
-</style>
+        img.top {
+            vertical-align: middle;
+        }
 
- 
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0;
+            left: 0;
+            background-color: #00ffffff; /* White*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 0px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+            padding: 7px 7px 7px 7px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        .btn-close {
+            color: #00ffffff;
+            background-color: #00ffffff;
+            border-color: #00ffffff;
+            padding: 7px 7px 7px 7px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #337ab7;
+            display: block;
+            transition: 0.3s
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover, .offcanvas a:focus{
+            color: #111;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            padding: 7px 7px 7px 7px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+    </style>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "150px";
+            document.getElementById("main").style.marginLeft = "150px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
 </head>
 
-<body background = "./background2.jpg">
- <h1>Hi there!</h1>
+<div id="mySidenav" class="sidenav">
 
-        <p>I'm <b>Suyash</b>, a Computer Science freshman at <a href="http://www.nus.edu.sg">National University of Singapore</a></p>
-        <p>Here's my latest <a href="./Resume.pdf">resume</a>.<p>
-        <br>
-        <p><b>You can find my Projects here:</b></p>
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+  <a href="javascript:void(0)"  class="btn-close" style="color:#00ffffff"onclick="closeNav()">__</a>
+  <a href="http://github.com/suyashshekhar">Github</a>
+  <a href="https://www.linkedin.com/in/suyash-shekhar-6219b3135/">LinkedIn</a>
+  <a href="https://www.facebook.com/suyashshekhar">Facebook</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">
+<button type="button" class="btn btn-primary">Contact Me</button>
+</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
+
+</nav>
+<body background = "./background2.jpg">
+
+    <div class="center" align="center">
+       <h1>Hi there!</h1>
+
+       <p>I'm <b>Suyash</b>, a Computer Science freshman at 
+
+           <a href="http://www.nus.edu.sg" target="_blank">National University of Singapore</a>.</p>
+
+           <a href="https;//nus.edu.sg" target="_blank"><img class="top" src="nus.gif" alt="NUS" style="width:150px;height:70px;"></a>
+       </p>
+
+
+       <p> And I am a student at the <a href="http://www.usp.nus.edu.sg/" target="_blank">NUS University Scholars Programme</a>.</p>
+
+
+       <a href="http://www.usp.nus.edu.sg/" target="_blank"><img src="./usp.png" class="top" align="middle" alt="USP" style="width:160px;height:58px;"></a>
+
+       <br><br>
+       <p>I am also part of the coreteam of <a href="http://nushackers.org" target="_blank">NUS Hackers</a>.</p>
+
+
+       <a href="https;//nushackers.org" target="_blank"><img src="hackers.gif" class="top" align="middle" alt="Hackers" style="width:150px;height:34px;"></a>
+
+       <!-- <p>Here's a picture of my younger self:</p> -->
+
+       <!-- <img src="photo.jpg" alt="Suyash" style="width:304px;height:304px;"> -->
+       <br><br>
+
+       <p>Here's my latest <a href="./Resume.pdf" target="_blank"><b>resume</b></a>.<p>
+
+        <p>You can find my Projects 
+            <a href="https://github.com/suyashshekhar" target="_blank"><b>here</b></a>.</p>
 <!-- 
         <ul class="new">
             <li> <a href="https://suyashshekhar.github.io/housie-grid-generator/">
@@ -46,13 +172,14 @@
 
         </ul> -->
 
- <a href="https://suyashshekhar.github.io/housie-grid-generator/">
+<!--  <a href="https://suyashshekhar.github.io/housie-grid-generator/">
 Housie Grid Generator</a>.<p>
  <a href="https://github.com/suyashshekhar/bojio-android_app/">Bojio! - an Android Scheduling App</a>.<p>
+-->
+<p>You can reach me at my <a href="mailto:suyash@nushackers.org"><b>email</b></a>.</p>
 
-        <br>
-        <p>You can reach me at my <a href="mailto:suyash@nushackers.org">email</a>.</p>
- 
+</div>
+</div>
 
 </body>
 
