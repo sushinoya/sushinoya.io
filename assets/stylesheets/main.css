@@ -1,0 +1,196 @@
+body {
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.red-link {
+	color: #a74e4d;
+}
+
+.red-link:hover {
+	text-decoration: none !important;
+	color: black;
+}
+
+/* NAVBAR CLASSES */
+.navbar {
+	font-family: 'Fira Sans', Helvetica;
+	font-weight: 300;
+	border-bottom: 0px !important;
+}
+
+.navbar-bg-light {
+	background: rgba(255, 255, 255, 0) !important;
+}
+
+.navbar-bg-dark {
+	background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar-brand {
+	font : normal 300 64px/1 'Josefin Sans', sans-serif;
+}
+
+.nav-item {
+}
+
+.active-link {
+    color: #a74e4d !important;
+}
+
+/*Black and white text classes are added to .nav-item in main.css using jQuery*/
+.black-text {
+    color: black;
+}
+
+.black-text:hover {
+    color: #a74e4d !important;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.white-text:hover {
+    color: darkgrey !important;
+}
+
+.shadow-text {
+	text-shadow: 2px 2px 4px black;
+}
+
+
+
+ /* SECTION CLASSES */
+.section {
+	min-height: 100px;
+	overflow: hidden;
+	padding-bottom: 80px;
+}
+
+#landing {
+	padding-bottom: 10px !important;
+}
+
+#about-text {
+	text-align: justify;
+}
+
+#resume {
+	min-height: 150px !important;
+	padding-bottom: 30px !important;
+}
+
+#contact {
+	min-height: 150px !important;
+	padding-bottom: 10px !important;
+}
+
+
+/* SECTION CONTENTS */
+.section-header {
+	font-family::'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 50px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#projects-header, #resume-header, #contact-header {
+	padding-bottom: 0px !important;
+}
+
+.section-header:hover {
+	color: #a74e4d;
+}
+
+.section-text {
+	padding-top: 2px;
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-align: center;
+}
+
+.project {
+	display: flex;
+	align-items: center;
+}
+
+.uncenter-text {
+	text-align: justify;
+}
+
+.logos-row {
+	padding-top: 20px !important;
+}
+
+#tito {
+	width:100% !important;
+	max-width:100% !important;
+	height:auto;
+}
+
+#hackers-logo {
+	max-width:90% !important;
+}
+
+
+.project-card {
+}
+
+#paybob {
+	max-width:50% !important;
+}
+
+#bojio {
+	max-width:40% !important;
+}
+
+#twitter-clone {
+	max-width:75% !important;
+}
+
+#doofenshmirtz {
+	max-width:100% !important;
+}
+
+.company {
+	display: flex;
+	align-items: center;
+}
+
+.banner {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width:auto;
+	max-width:70%;
+	height:auto;
+}
+
+.project-title {
+	font-family: 'Fira Sans', Helvetica;
+	font-weight: 300;
+	border-bottom: 0px !important;
+	font-size: 30px;
+	text-align: center;
+	color: #a74e4d;
+}
+
+.project-title:hover {
+	color: black;
+}
+
+.project-link:hover {
+	text-decoration: none !important;
+}
+
+.footer {
+	padding-top: 15px;
+}
