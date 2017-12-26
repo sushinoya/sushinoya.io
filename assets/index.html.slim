@@ -1,0 +1,257 @@
+doctype html
+html lang="en" 
+  head
+    title Suyash Shekhar
+    meta content=("Suyash Shekhar is a coreteam member of NUS Hackers and a Computer Science undergraduate at National University of Singapore.") name="description" /
+    meta content="index,follow" name="robots" /
+    meta content="no-referrer" name="referrer" /
+    link href="https://www.linkedin.com/in/sushinoya" rel="author" /
+    link href="//fonts.googleapis.com/" rel="dns-prefetch" /
+    link href="./assets/icons/favicon.ico" rel="icon" /
+    
+    /! CSS FILES
+    link href="./assets/stylesheets/fonts.css" rel="stylesheet" type="text/css" /
+    link href="./assets/stylesheets/main.css" rel="stylesheet" type="text/css" /
+    link href="./assets/stylesheets/landing.css" rel="stylesheet" type="text/css" /
+    link href="./assets/stylesheets/footer.css" rel="stylesheet" type="text/css" /
+    
+    /! COMPATIBILITY SETTINGS
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    
+    /! BOOTSTRAP
+    link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /
+    
+    /! FONTS
+    link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" /
+  body
+    
+    /! Fixed navbar
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+          a#landing-btn.nav-item.navbar-brand href="#landing" onclick=("return false;")  @sushinoya
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a#about-btn.nav-item href="#about" onclick=("return false;")  About
+            li
+              a#experience-btn.nav-item href="#experience" onclick=("return false;")  Experience
+            li
+              a#projects-btn.nav-item href="#projects" onclick=("return false;")  Projects
+            li
+              a#resume-btn.nav-item href="#resume" onclick=("return false;")  Resume
+            li
+              a#contact-btn.nav-item href="#contact" onclick=("return false;")  Get in touch
+    
+    /! LANDING IMAGE AND TEXT
+    section#landing.demo
+      h1 Suyash Shekhar
+      a#scroll-btn href="#about" 
+        span
+    
+    /! ABOUT ME SECTION
+    #about.section
+      h1.section-header About Me
+      .col-sm-2
+      .col-sm-8.section-text
+        p#about-text
+          | I am a Computer Science undergraduate at
+          a.red-link href="http://www.nus.edu.sg" target="_blank"  National University of Singapore
+          | specialising in Artificial Intelligence and Algorithms.
+          | I am also a coreteam member of
+          a.red-link href="http://www.nushackers.org" target="_blank"  NUS Hackers
+          | and an active chess player.
+          | I am a scholar under the
+          a.red-link href="http://www.usp.nus.edu.sg/" target="_blank"  University Scholars Programme
+          | at NUS.
+          | You can find my sociolinguistics research papers and essays written during my studies at USP
+          = succeed "." do
+            a.red-link href="http://www.github.com/sushinoya/sociolinguistics-papers" target="_blank"  here
+        
+        /! LOGOS ROW
+        .row.logos-row
+          
+          /! NUS IMAGE
+          .col-sm-4
+            a href="http://www.nus.edu.sg" target="_blank" 
+              img.banner alt="NUS" src="./assets/banners/nus.gif" /
+          
+          /! USP IMAGE
+          .col-sm-4
+            a href="http://www.usp.nus.edu.sg/" target="_blank" 
+              img.banner alt="USP" src="./assets/banners/usp.png" /
+          
+          /! NUS HACKERS IMAGE
+          .col-sm-4
+            a href="http://nushackers.org/" target="_blank" 
+              img#hackers-logo.banner alt=("NUS HACKERS") src="./assets/banners/hackers.gif" /
+    
+    /! EXPERIENCE
+    #experience.section
+      h1.section-header Experience
+      .col-sm-2
+      .col-sm-9
+        
+        /! SumoStory
+        .row.company
+          .col-sm-4.banner-holder
+            a href="http://www.sumostory.com" target="_blank" 
+              img.banner alt="SumoStory" src="./assets/banners/sumostory.png" /
+          .col-sm-8
+            p.section-text.uncenter-text
+              | SumoStory is a Singapore-based start-up which aims to automate the
+              | public relations industry with the use of efficient algorithms.
+              | I am currently working as a
+              b Full-Stack Developer
+              | at SumoStory using
+              b Rails
+              | for both the front and back-end.
+        hr/
+        
+        /! Tinkerbox
+        .row.company
+          .col-sm-4.banner-holder
+            a href="https://www.tinkerbox.com.sg" target="_blank" 
+              img.banner alt="Tinkerbox" src="./assets/banners/tinkerbox.png" /
+          .col-sm-8
+            p.section-text.uncenter-text
+              | I interned as a Web Developer at Tinkerbox in the Summer of 2017. Tinkerbox is a Agile Web-Development company where learning is celebrated.
+              | Not only I picked up Ruby on Rails here but also learnt the importance of a formal, systematic way of developing software.
+              | With awesome colleagues and a great culture, Tinkerbox was an absolute delight.
+        hr/
+        
+        /! Tito Isaac and Co. LLP
+        .row.company
+          .col-sm-4.banner-holder
+            a href="https://http://www.law-isaac.com/" target="_blank" 
+              img#tito.banner alt=("Tito Isaac and Co. LLP") src="./assets/banners/tito2.png" /
+          .col-sm-8
+            p.section-text.uncenter-text
+              | Before I ventured into the field of software and computer science, I worked as a Law Intern
+              | at Tito Isaac and Co. LLP.
+              | There I learnt about legal research and drafting legal documents.
+              | I also got the opportunity to witness several cases in the High Court of Singapore.
+    
+    /! PROJECTS
+    #projects.section
+      h1#projects-header.section-header Projects
+      .col-sm-2
+      .col-sm-9
+        
+        /! PayBob
+        .row.project
+          .col-sm-8.project-desc-holder
+            p.section-text.uncenter-text
+              | PayBob is a telegram bot for managing finances. It allows users to track how much they owe
+              | others and how much other owe them. You can find PayBob at
+              = succeed "." do
+                a.red-link href="https://t.me/paybobbot" target="_blank"  here
+              | You can find the Source Code
+              = succeed "." do
+                a.red-link href="https://github.com/prataflippers/paybob" target="_blank"  here
+          .col-sm-4.banner-holder
+            .project-card
+              a.project-link href="https://github.com/prataflippers/paybob" target="_blank" 
+                img#paybob.banner alt="PayBob" src="./assets/projects/paybob.png" /
+              h3.project-title PayBob
+        hr/
+        
+        /! Twitter Clone
+        .row.project
+          .col-sm-4.banner-holder
+            .project-card
+              a.project-link href="https://github.com/sushinoya/twitter-clone" target="_blank" 
+                img#twitter-clone.banner alt=("Twitter Clone") src="./assets/projects/twitter.png" /
+              h3.project-title Twitter Clone
+          .col-sm-8.project-desc-holder
+            p.section-text.uncenter-text
+              | Twitter Clone was my first Ruby on Rails project I worked on.
+              | The entire project was built in 2 weeks complete with tests for every component.
+              | You can find the Source Code
+              = succeed "." do
+                a.red-link href="https://github.com/sushinoya/twitter-clone" target="_blank"  here
+        hr/
+        
+        /! Bojio
+        .row.project
+          .col-sm-8.project-desc-holder
+            p.section-text.uncenter-text
+              | Bojio! was an Android app built together with three friends for Hack&amp;Roll 2016.
+              | It was our first time using Android Studio. The app allows easy schedulling for people
+              | who wish to decide on a common time for a meeting. It parses and outputs .ics files to achieve this.
+              | You can find the Source Code
+              = succeed "." do
+                a.red-link href="https://github.com/sushinoya/bojio-android_app" target="_blank"  here
+          .col-sm-4.banner-holder
+            .project-card
+              a.project-link href="https://github.com/sushinoya/bojio-android_app" target="_blank" 
+                img#bojio.banner alt="Bojio" src="./assets/projects/bojio.png" /
+              h3.project-title Bojio!
+        hr/
+        
+        /! Doofenshmirtz
+        .row.project
+          .col-sm-4.banner-holder
+            .project-card
+              a.project-link href="https://github.com/sushinoya/doofenshmirtz" target="_blank" 
+                img#doofenshmirtz.banner alt="Doofenshmirtz" src="./assets/projects/doofen.png" /
+              h3.project-title Doofenshmirtz
+          .col-sm-8.project-desc-holder
+            p.section-text.uncenter-text
+              | Doofenshmirtz is a simplistic theme for Jekyll. It is still very primitive but is being continuously improved.
+              | You can find the Source Code
+              = succeed "." do
+                a.red-link href="https://github.com/sushinoya/doofenshmirtz" target="_blank"  here
+    
+    /! RESUME
+    #resume.section
+      h1#resume-header.section-header Resume
+      .section-text
+        p
+          | You can find my latest resume
+          = succeed "." do
+            a.red-link href="./assets/resume.pdf" target="_blank"  here
+    
+    /! CONTACT ME
+    #contact.section
+      h1#contact-header.section-header Get in touch
+      .col-sm-3
+      .col-sm-6.section-text
+        p
+          | Wish to collaborate together? Drop me an email at
+          a.red-link href="mailto:suyash@nushackers.org"  suyash@nushackers.org
+          | or a tweet at
+          = succeed "." do
+            a.red-link href="https://www.twitter.com/sushiomnomnom"  @sushiomnomnom
+    
+    /! FOOTER
+    .footer
+      .footer-contents
+        p.footer-text
+          a.social-icon href="https://www.facebook.com/suyashshekhar" 
+            img alt="Facebook" border="0" height="25" src="./assets/icons/fb-dark.svg" width="25" /
+          a.social-icon href="https://www.twitter.com/sushiomnomnom" 
+            img alt="Twitter" border="0" height="25" src="./assets/icons/twitter-dark.svg" width="25" /
+          a.social-icon href="https://www.github.com/sushinoya" 
+            img alt="GitHub" border="0" height="25" src="./assets/icons/git-dark.svg" width="25" /
+          a.social-icon href="https://www.linkedin.com/in/sushinoya" 
+            img alt="LinkedIn" border="0" height="25" src="./assets/icons/linked-dark.svg" width="25" /
+          a.social-icon href="mailto:suyash@nushackers.org" 
+            img alt="Email" border="0" height="25" src="./assets/icons/mail-dark.svg" width="25" /
+        
+        /! <hr
+        p.footer-text
+          | \&copy; Suyash Shekhar
+    
+    /! jQuery library
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" 
+    
+    /! Latest compiled Bootstrap JavaScript
+    script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    
+    /! Main JavaScript
+    script src="./assets/js/main.js" 
