@@ -1,0 +1,20 @@
+.footer {
+    height:40px;
+}
+
+.footer-contents {
+    height:40px;
+    margin:auto;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.social-icon:hover {
+	text-decoration: none;
+}
+
+.social-icon {
+    border-top: 10px;
+}
