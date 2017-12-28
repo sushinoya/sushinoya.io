@@ -34,9 +34,8 @@ section h1 {
   text-shadow: 2px 2px 4px black;
 }
 
-
 #landing {
-  background: url('../backgrounds/bg1.jpg') center center / cover no-repeat;
+  /*background: Set dynamically in main.js*/
 }
 
 .demo a {
