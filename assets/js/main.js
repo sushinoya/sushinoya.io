@@ -1,4 +1,3 @@
-
 var navbar_height = $('.navbar').outerHeight();
 
 // SMOOTH SCROLL FOR THE NAVBAR
@@ -46,21 +45,6 @@ $("#scroll-btn").click(function() {
     }, 600);
 });
 
-//PICK THE THEME OF THE NAVBAR BASED ON THE INITIAL POSITION
-window.onload = initialise;
-function initialiseNavbar() {
-  var landing_area = $('#about').offset().top;
-  var navbar_pos = $('.nav-item').offset().top;
-  if (navbar_pos >= landing_area - navbar_height) {
-    $('.nav-item').addClass('black-text');
-    $('.navbar').addClass('navbar-bg-dark');
-  } else {
-    $('.nav-item').addClass('white-text');
-    $('.navbar-brand').addClass('shadow-text');
-    $('.navbar').addClass('navbar-bg-light');
-  }
-}
-
 // CHANGE BACKGROUND EVERY LOAD
 var numOfBgs = 3;
 var bgNumber = Math.floor(Math.random() * numOfBgs) + 1;
@@ -71,35 +55,11 @@ function setBackground() {
 }
 
 // ON EVERY LOAD OF PAGE
+window.onload = initialise;
+
 function initialise() {
-  initialiseNavbar();
   setBackground();
 }
-
-// CHANGE FROM WHITE TO BLACK WHEN SCROLLED PAST LANDING
-$(document).ready(function() {
-	$(window).scroll(function() {
-    var landing_area = $('#about').offset().top;
-    var navbar_pos = $('.nav-item').offset().top;
-    if (navbar_pos >= landing_area - navbar_height) {
-      $('.nav-item').removeClass('white-text');
-    	$('.nav-item').addClass('black-text');
-      $('.navbar-brand ').removeClass('shadow-text');
-
-      $('.navbar').removeClass('navbar-bg-light');
-      $('.navbar').addClass('navbar-bg-dark');
-
-    } else {
-    	$('.nav-item').removeClass('black-text');
-      $('.nav-item').addClass('white-text');
-      $('.navbar-brand ').addClass('shadow-text');
-
-      $('.navbar').removeClass('navbar-bg-dark');
-      $('.navbar').addClass('navbar-bg-light');
-    }
-  })
-})
-
 
 // CHANGE TO LIGHT VERSION OF IMAGE ON HOVER
 $(function ($) {
