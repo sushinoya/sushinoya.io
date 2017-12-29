@@ -20,6 +20,11 @@ section::after {
   height: 80%;
 }
 
+@media screen and (max-width: 600px) {
+	section h1 {
+    font : normal 300 34px/1 'Josefin Sans', sans-serif !important;
+	}
+}
 section h1 {
   position: absolute;
   top: 50%;

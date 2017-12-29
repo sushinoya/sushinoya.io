@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 //PICK THE THEME OF THE NAVBAR BASED ON THE INITIAL POSITION
 function initialiseNavbar() {
-  console.log("navbar set")
   var landing_area = $('#about').offset().top;
   var navbar_pos = $('.nav-item').offset().top;
   if (navbar_pos >= landing_area - navbar_height) {

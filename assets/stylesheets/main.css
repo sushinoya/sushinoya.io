@@ -1,17 +1,7 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
 	.logos-row, .banner-holder {
 		display:none;
 	}
-}
-
-#nav-button {
-	padding-bottom: 0px !important;
-	padding-top: 0px !important;
-}
-
-#nav-button:hover {
-	text-decoration: underline;
-	background-color: inherit;
 }
 
 body {
