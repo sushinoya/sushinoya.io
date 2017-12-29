@@ -11,9 +11,11 @@ function initialiseNavbar() {
   var navbar_pos = $('.nav-item').offset().top;
   if (navbar_pos >= landing_area - navbar_height) {
     $('.nav-item').addClass('black-text');
+    $('#menu').addClass('black-text');
     $('.navbar').addClass('navbar-bg-dark');
   } else {
     $('.nav-item').addClass('white-text');
+    $('#menu').addClass('white-text');
     $('.navbar-brand').addClass('shadow-text');
     $('.navbar').addClass('navbar-bg-light');
   }
@@ -25,7 +27,9 @@ function setScroll() {
     var navbar_pos = $('.nav-item').offset().top;
     if (navbar_pos >= landing_area - navbar_height) {
       $('.nav-item').removeClass('white-text');
+      $('#menu').removeClass('white-text');
       $('.nav-item').addClass('black-text');
+      $('#menu').addClass('black-text');
       $('.navbar-brand ').removeClass('shadow-text');
 
       $('.navbar').removeClass('navbar-bg-light');
@@ -33,7 +37,9 @@ function setScroll() {
 
     } else {
       $('.nav-item').removeClass('black-text');
+      $('#menu').removeClass('black-text');
       $('.nav-item').addClass('white-text');
+      $('#menu').addClass('white-text');
       $('.navbar-brand ').addClass('shadow-text');
 
       $('.navbar').removeClass('navbar-bg-dark');
