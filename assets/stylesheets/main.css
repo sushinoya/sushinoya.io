@@ -1,7 +1,14 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
 	.logos-row, .banner-holder {
 		display:none;
 	}
+}
+
+/*LIGHT THEME*/
+:root {
+	--highlight-color: #a74e4d;
+	--background-color: white;
+	--text-color: black;
 }
 
 #hidden-assets {
@@ -12,6 +19,8 @@ body {
 	font-family: 'Didact Gothic', sans-serif;
 	font-weight: 300;
 	line-height: 1.7;
+	background-color: var(--background-color) !important;
+	color: var(--text-color) !important;
 }
 
 a:hover {
@@ -19,7 +28,7 @@ a:hover {
 }
 
 .red-link {
-	color: #a74e4d;
+	color: var(--highlight-color);
 }
 
 .red-link:hover {
@@ -50,7 +59,7 @@ a:hover {
 }
 
 .active-link {
-    color: #a74e4d !important;
+    color: var(--highlight-color) !important;
 }
 
 /*Black and white text classes are added to .nav-item in main.css using jQuery*/
@@ -59,7 +68,7 @@ a:hover {
 }
 
 .black-text:hover {
-    color: #a74e4d !important;
+    color: var(--highlight-color) !important;
 }
 
 .white-text {
@@ -71,7 +80,7 @@ a:hover {
 }
 
 .shadow-text {
-	text-shadow: 2px 2px 4px black;
+	/*text-shadow: 2px 2px 4px black;*/
 }
 
 
@@ -116,7 +125,7 @@ a:hover {
 }
 
 .section-header:hover {
-	color: #a74e4d;
+	color: var(--highlight-color);
 }
 
 .section-text {
@@ -190,7 +199,7 @@ a:hover {
 	border-bottom: 0px !important;
 	font-size: 30px;
 	text-align: center;
-	color: #a74e4d;
+	color: var(--highlight-color);
 }
 
 .project-title:hover {
