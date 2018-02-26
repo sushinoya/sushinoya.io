@@ -23,6 +23,10 @@ body {
 	color: var(--text-color) !important;
 }
 
+a {
+	text-decoration-color: black;
+}
+
 a:hover {
 	text-decoration: none !important;
 }
@@ -55,7 +59,24 @@ a:hover {
 	font : normal 300 64px/1 'Josefin Sans', sans-serif;
 }
 
+.navbar-brand-teaching {
+	color: black;
+	font : normal 300 64px/1 'Josefin Sans', sans-serif;
+}
+
+.navbar-brand-teaching:hover {
+	color: var(--highlight-color);
+}
+
+
+textarea {
+	min-width: 600px;
+	min-height: 100px;
+}
 .nav-item {
+}
+
+.onpage-link {
 }
 
 .active-link {
@@ -191,6 +212,10 @@ a:hover {
 	width:auto;
 	max-width:70%;
 	height:auto;
+}
+
+.teaching-banner {
+	border-radius: 13%;
 }
 
 .project-title {

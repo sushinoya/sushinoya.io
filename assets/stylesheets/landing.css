@@ -41,9 +41,12 @@ section h1 {
 
 #landing {
   /*background: Set dynamically in main.js*/
-  /*transition: background 0.5s linear;*/
-  /*-webkit-transition: width 2s; /* Safari */
-  /*transition: width 2s;*/*/
+  transition: background 0.5s linear;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+#landing:hover {
 }
 
 .demo a {

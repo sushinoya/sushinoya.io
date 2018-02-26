@@ -77,7 +77,7 @@ $(function ($) {
 // HIGHLIGHT THE SECTION CURRENTLY VISITED
 $(window).on("scroll", function() {
   var currentPos = $(window).scrollTop();
-  $('.nav-item').each(function() {
+  $('.onpage-link').each(function() {
     var sectionLink = $(this);
 
     // Capture the height of the navbar
