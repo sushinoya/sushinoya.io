@@ -40,7 +40,7 @@
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="noselect">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -49,45 +49,44 @@
           <button id="nav-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span id="menu"> Menu </span>
           </button>
-          <a id="landing-btn" class="nav-item navbar-brand" onclick="return false;" href="#landing">@sushinoya</a>
+          <a id="landing-btn" class="nav-item navbar-brand noselect" onclick="return false;" href="#landing">@sushinoya</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="nav-item onpage-link" id="about-btn" onclick="return false;" href="#about">About</a></li>
-            <li><a class="nav-item onpage-link" id="experience-btn" onclick="return false;" href="#experience">Experience</a></li>
-            <li><a class="nav-item onpage-link" id="projects-btn" onclick="return false;" href="#projects">Projects</a></li>
-            <li><a class="nav-item onpage-link" id="resume-btn" onclick="return false;" href="#resume">Resume</a></li>
-            <li><a class="nav-item onpage-link" id="contact-btn" onclick="return false;" href="#contact">Get in touch</a></li>
-            <li><a class="nav-item" id="teaching-btn" href="teaching.html">Teaching</a></li>
+            <li><a class="nav-item onpage-link noselect" id="about-btn" onclick="return false;" href="#about">About</a></li>
+            <li><a class="nav-item onpage-link noselect" id="experience-btn" onclick="return false;" href="#experience">Experience</a></li>
+            <li><a class="nav-item onpage-link noselect" id="teaching-btn" onclick="return false;" href="#teaching">Teaching</a></li>
+            <li><a class="nav-item onpage-link noselect" id="projects-btn" onclick="return false;" href="#projects">Projects</a></li>
+            <li><a class="nav-item onpage-link noselect" id="resume-btn" onclick="return false;" href="#resume">Resume</a></li>
+            <li><a class="nav-item onpage-link noselect" id="contact-btn" onclick="return false;" href="#contact">Get in touch</a></li>
+            <!-- <li><a class="nav-item noselect" id="teaching-btn" href="teaching.html">Teaching</a></li> -->
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- LANDING IMAGE AND TEXT -->
-    <section id="landing" class="demo">
+    <section id="landing" class="demo noselect">
       <h1>Suyash Shekhar</h1>
       <a id="scroll-btn"href="#about"><span></span></a>
     </section>
 
     <!-- ABOUT ME SECTION -->
     <div class="section" id="about">
-      <h1 class="section-header"> About Me </h1>
+      <h1 class="section-header noselect"> About Me </h1>
       <div class="col-sm-2"></div>
       <div class="col-sm-8 section-text">
         <p id="about-text">
           I am a Computer Science undergraduate at
           <a class="red-link" href="http://www.nus.edu.sg" target="_blank">National University of Singapore</a>
-          specialising in Artificial Intelligence and Algorithms.
-          I am also a coreteam member of
-          <a class="red-link" href="http://www.nushackers.org" target="_blank">NUS Hackers</a>
-          and an active chess player.
+          specialising in Artificial Intelligence, Algorithms and Programming Languages.
+          I am also a coreteam member (and President) of
+          <a class="red-link" href="http://www.nushackers.org" target="_blank">NUS Hackers</a>.
           I am a scholar under the
           <a class="red-link" href="http://www.usp.nus.edu.sg/" target="_blank">University Scholars Programme</a>
           at NUS.
           You can find my sociolinguistics research papers and essays written during my studies at USP
           <a class="red-link" href="http://www.github.com/sushinoya/sociolinguistics-papers" target="_blank">here</a>.
-
         </p>
 
         <!-- LOGOS ROW -->
@@ -117,26 +116,26 @@
         </div>
       </div>
     </div>
+    
 
     <!-- EXPERIENCE -->
     <div class="section" id="experience">
-      <h1 class="section-header"> Experience </h1>
+      <h1 class="section-header noselect"> Experience </h1>
       <div class="col-sm-2"></div>
       <div class="col-sm-9">
 
-        <!-- SumoStory -->
+        <!-- SeaGroup -->
         <div class="row company">
           <div class="col-sm-4 banner-holder">
-            <a href="http://www.sumostory.com" target="_blank">
-              <img class="banner" src="./assets/banners/sumostory.png" alt="SumoStory">
+            <a href="http://www.seagroup.com" target="_blank">
+              <img class="banner" src="./assets/banners/sea.png" alt="Sea Group">
             </a>
           </div>
           <div class="col-sm-8">
             <p class="section-text uncenter-text">
-              <b>SumoStory</b> is a Singapore-based start-up which aims to automate the
-              public relations industry with the use of efficient algorithms.
-              I am currently working as a <b>Full-Stack Developer</b> at SumoStory using <b>Rails</b>
-              for both the front and back-end.
+              <b>Sea (formerly Garena)</b>  is one of the leading tech companies in South East Asia.
+              I worked with the iOS team at Sea where I developed a Debugging SDK from scratch in about
+              two months. It is used by all current iOS apps made or maintained by the company.
              </p>
           </div>
         </div>
@@ -178,12 +177,145 @@
       </div>
     </div>
 
+
+    <!-- TEACHING -->
+    <div class="section" id="teaching">
+      <h1 class="section-header noselect"> Teaching </h1>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-9">
+
+            <!-- CS2010 -->
+        <div class="row company">
+          <div class="col-sm-4 banner-holder">
+            <a href="./teaching.html" target="_blank">
+              <h2 class="module-banner">CS2010</h2>
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <p class="section-text uncenter-text">
+              I worked as a tutor for <b>CS2010</b> which is the second algorithms class taught at NUS Computing. I made my own notes/slides for each session which you may find 
+              <a class="red-link" href="./teaching.html" target="_blank">here</a>. All in all, I got a <b>positive feedback from 96% of my students</b> and a score of 
+              <b>4.6/5.0</b> for effectiveness as a tutor (as compared to the faculty average of 4.1).
+             </p>
+          </div>
+        </div>
+        <hr>
+
+
+            <!-- CS2103 -->
+        <div class="row company">
+          <div class="col-sm-4 banner-holder">
+            <a href="./teaching.html" target="_blank">
+              <h2 class="module-banner">CS2103</h2>
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <p class="section-text uncenter-text">
+              <b>CS2103</b> is the largest Software Engineering class compulsory for all Computer Science undergraduates.
+              It teaches the basics of software design, UML Diagrams, Design Patters and other important
+              Software Engineering principles. I will commence tutoring this module in this upcoming fall.
+             </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
     <!-- PROJECTS -->
     <div class="section" id="projects">
-      <h1 class="section-header" id="projects-header"> Projects </h1>
+      <h1 class="section-header noselect" id="projects-header"> Projects </h1>
 
       <div class="col-sm-2"></div>
       <div class="col-sm-9">
+
+       <!-- Lumos -->
+        <div class="row project">
+          <div class="col-sm-8 project-desc-holder">
+            <p class="section-text uncenter-text">
+              <b>Lumos</b> is a light Swift wrapper around Objective-C Runtime functions to provide a simple,
+              easy-to-use API for property/method swizzling and querying and modifying objects, classes and 
+              methods at runtime. You can find the source code and installation instructions
+              <a class="red-link" href="https://github.com/sushinoya/lumos" target="_blank">here</a>.
+             </p>
+          </div>
+          <div class="col-sm-4 banner-holder">
+            <div class="project-card">
+              <a class="project-link" href="https://github.com/sushinoya/lumos" target="_blank">
+                <img class="banner" id="lumos" src="./assets/projects/lumos.gif" alt="Lumos" style="max-width: 80%;">
+                <h3 class="project-title"> Lumos </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+      <!-- NUSLib -->
+        <div class="row project">
+          <div class="col-sm-4 banner-holder">
+            <div class="project-card">
+              <a class="project-link" href="https://github.com/sushinoya/nuslib" target="_blank">
+                <img class="banner" id="nuslib" src="./assets/projects/nuslib-icon.png" alt="NUSLib" style="max-height: 150px;">
+                <h3 class="project-title"> NUSLib </h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-8 project-desc-holder">
+            <p class="section-text uncenter-text">
+              <b>NUSLib</b> is an iOS app to allow students to borrow and browse through books from the various libraries in NUS.
+              Based on your borrowing history, it can also suggest related works. Other features include finding books by
+              ISBN and barcode and an internal book review system. This project won the <b>Best Project Award (iOS)</b> at 
+              SoC Term Project Showcase (STePS) 2018. You can find the Source Code
+              <a class="red-link" href="https://github.com/sushinoya/nuslib" target="_blank">here</a>.
+             </p>
+          </div>
+        </div>
+        <hr>
+
+
+      <!-- Tetris-AI -->
+        <div class="row project">
+          <div class="col-sm-8 project-desc-holder">
+            <p class="section-text uncenter-text">
+              <b>Tetris-AI</b> is a Java program based on a combination of the classic Genetic Algorithm and Simulated Annealing
+              which is optimised to play the game of Tetris. When trained well, the program can clear upto 2 million lines
+              of tetris. You can find the source code 
+              <a class="red-link" href="https://github.com/sushinoya/tetris-ai" target="_blank">here</a>.
+             </p>
+          </div>
+          <div class="col-sm-4 banner-holder">
+            <div class="project-card">
+              <a class="project-link" href="https://github.com/sushinoya/tetris-ai" target="_blank">
+                <img class="banner" id="lumos" src="./assets/projects/tetris.png" alt="Lumos">
+                <h3 class="project-title"> Tetris-AI </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+
+      <!-- Sorting Hat -->
+        <div class="row project">
+          <div class="col-sm-4 banner-holder">
+            <div class="project-card">
+              <a class="project-link" href="https://github.com/nus-usp/room-allocation" target="_blank">
+                <img class="banner" id="twitter-clone" src="./assets/projects/cinnamon.png" alt="Sorting Hat" style="max-height: 250px;">
+                <h3 class="project-title"> Sorting Hat </h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-8 project-desc-holder">
+            <p class="section-text uncenter-text">
+              <b>Sorting Hat</b> is a project that I worked on together with my friend <a class="red-link" href="https://www.varunpatro.com" target="_blank">Varun</a>.
+              We devised an algorithm using <b>z3</b> and <b>pandas</b> to optimise room allocation based on students' room and floor preferences.
+              You can find the Source Code
+              <a class="red-link" href="https://github.com/sushinoya/twitter-clone" target="_blank">here</a>.
+             </p>
+          </div>
+        </div>
+        <hr>
+
 
       <!-- PayBob -->
         <div class="row project">
@@ -213,7 +345,7 @@
           <div class="col-sm-4 banner-holder">
             <div class="project-card">
               <a class="project-link" href="https://github.com/sushinoya/twitter-clone" target="_blank">
-                <img class="banner" id="twitter-clone" src="./assets/projects/twitter.png" alt="Twitter Clone">
+                <img class="banner" id="twitter-clone" src="./assets/projects/twitter-bird.png" alt="Twitter Clone" style="max-height: 125px;">
                 <h3 class="project-title"> Twitter Clone </h3>
               </a>
             </div>
@@ -250,43 +382,24 @@
             </div>
           </div>
         </div>
-        <hr>
-
-      <!-- Doofenshmirtz -->
-        <div class="row project">
-          <div class="col-sm-4 banner-holder">
-            <div class="project-card">
-              <a class="project-link" href="https://github.com/sushinoya/doofenshmirtz" target="_blank">
-                <img class="banner" id="doofenshmirtz" src="./assets/projects/doofen.png" alt="Doofenshmirtz">
-                <h3 class="project-title"> Doofenshmirtz</h3>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-8 project-desc-holder">
-            <p class="section-text uncenter-text">
-              <b>Doofenshmirtz</b> is a simplistic theme for Jekyll. It is still very primitive but is being continuously improved.
-              You can find the Source Code
-              <a class="red-link" href="https://github.com/sushinoya/doofenshmirtz" target="_blank">here</a>.
-             </p>
-          </div>
-        </div>
 
       </div>
     </div>
 
+
     <!-- RESUME -->
     <div class="section" id="resume">
-      <h1 class="section-header" id="resume-header"> Resume </h1>
+      <h1 class="section-header noselect" id="resume-header"> Resume </h1>
       <div class="section-text">
         <p>You can find my latest resume
-          <a class="red-link" href="./assets/Suyash Shekhar - Resume.pdf" target="_blank">here</a>.
+          <a class="red-link" href="./assets/Resume.pdf" target="_blank">here</a>.
         </p>
       </div>
     </div>
 
     <!-- CONTACT ME -->
     <div class="section" id="contact">
-      <h1 class="section-header" id="contact-header"> Get in touch </h1>
+      <h1 class="section-header noselect" id="contact-header"> Get in touch </h1>
       <div class="col-sm-3"></div>
       <div class="col-sm-6 section-text">
         <p>
@@ -301,39 +414,38 @@
     <!-- FOOTER -->
     <div class="footer">
       <div class="footer-contents">
-
         <p class="footer-text">
-          <a class="social-icon" href="https://www.facebook.com/suyashshekhar">
-            <img src="./assets/icons/fb-dark.svg" alt="Facebook" width="25" height="25" border="0">
+          <a class="contact-icon" href="https://www.twitter.com/sushiomnomnom" target="_blank">
+            <img src="./assets/icons/twtr-dark.svg" alt="My Twitter" width="25" height="25" border="0">
           </a>
 
-          <a class="social-icon" href="https://www.twitter.com/sushiomnomnom">
-            <img src="./assets/icons/twitter-dark.svg" alt="Twitter" width="25" height="25" border="0">
+          <a class="contact-icon" href="https://www.facebook.com/suyashshekhar" target="_blank">
+            <img src="./assets/icons/fb-dark.svg" alt="My Facebook" width="25" height="25" border="0">
           </a>
 
-          <a class="social-icon" href="https://www.github.com/sushinoya">
-            <img src="./assets/icons/git-dark.svg" alt="GitHub" width="25" height="25" border="0">
+          <a class="contact-icon" href="https://www.github.com/sushinoya" target="_blank">
+            <img src="./assets/icons/git-dark.svg" alt="My Github" width="25" height="25" border="0">
           </a>
 
-          <a class="social-icon" href="https://www.linkedin.com/in/sushinoya">
-            <img src="./assets/icons/linked-dark.svg" alt="LinkedIn" width="25" height="25" border="0">
+          <a class="contact-icon" href="https://www.linkedin.com/in/sushinoya" target="_blank">
+            <img src="./assets/icons/linked-dark.svg" alt="My LinkedIn" width="25" height="25" border="0">
           </a>
 
-          <a class="social-icon" href="mailto:suyash@nushackers.org">
-            <img src="./assets/icons/mail-dark.svg" alt="Email" width="25" height="25" border="0">
+          <a class="contact-icon" href="mailto:suyash@nushackers.org" target="_blank">
+            <img src="./assets/icons/mail-dark.svg" alt="My Email" width="25" height="25" border="0">
           </a>
         </p>
 
         <p id="hidden-assets">
           <img src="./assets/icons/fb.svg">
-          <img src="./assets/icons/twitter.svg">
+          <img src="./assets/icons/twtr.svg">
           <img src="./assets/icons/git.svg">
           <img src="./assets/icons/linked.svg">
           <img src="./assets/icons/mail.svg">
         </p>
 
         <!-- <hr> -->
-        <p class="footer-text">
+        <p class="footer-text noselect">
           &copy; Suyash Shekhar
         </p>
 

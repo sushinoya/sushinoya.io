@@ -19,15 +19,27 @@ $("#experience-btn").click(function() {
     }, 600);
 });
 
+$("#teaching-btn").click(function () {
+    $('html, body').animate({
+        scrollTop: $("#teaching").offset().top - navbar_height
+    }, 600);
+});
+
 $("#projects-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#projects").offset().top - navbar_height
     }, 600);
 });
 
-$("#resume-btn").click(function() {
+// $("#resume-btn").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#resume").offset().top - navbar_height - 0.35 * $('#projects').outerHeight()
+//     }, 600);
+// });
+
+$("#resume-btn").click(function () {
     $('html, body').animate({
-        scrollTop: $("#resume").offset().top - navbar_height - 0.35 * $('#projects').outerHeight()
+        scrollTop: $("#resume").offset().top - navbar_height
     }, 600);
 });
 
@@ -48,7 +60,9 @@ $("#scroll-btn").click(function() {
 // CHANGE BACKGROUND EVERY LOAD
 var numOfBgs = 3;
 var bgNumber = Math.floor(Math.random() * numOfBgs) + 1;
-var imageUrl = './assets/backgrounds/bg'+ bgNumber + '.jpg';
+// var imageUrl = './assets/backgrounds/bg'+ bgNumber + '.jpg';
+var imageUrl = './assets/backgrounds/bg' + 5 + '.jpg';
+
 
 function setBackground() {
   $('#landing').css('background', 'url(' + imageUrl + ')' + 'center center / cover no-repeat');
@@ -63,7 +77,7 @@ function initialise() {
 
 // CHANGE TO LIGHT VERSION OF IMAGE ON HOVER
 $(function ($) {
-    $('.social-icon').hover(function () {
+    $('.contact-icon').hover(function () {
         $(this).find('img').attr('src', function (i, src) {
             return src.replace("-dark.svg", ".svg");
         })
