@@ -141,7 +141,7 @@ textarea {
 	padding-bottom: 20px;
 }
 
-#projects-header, #resume-header, #contact-header {
+#resume-header, #contact-header {
 	padding-bottom: 0px !important;
 }
 
@@ -160,6 +160,15 @@ textarea {
 .project {
 	display: flex;
 	align-items: center;
+}
+
+.module-banner {
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 50px;
+	text-align: center;
+	padding-bottom: 20px;
+	color: black;
 }
 
 .uncenter-text {
@@ -210,7 +219,8 @@ textarea {
 	margin-right: auto;
 	display: block;
 	width:auto;
-	max-width:70%;
+	max-height: 200px;
+	max-width:80%;
 	height:auto;
 }
 
@@ -225,6 +235,7 @@ textarea {
 	font-size: 30px;
 	text-align: center;
 	color: var(--highlight-color);
+	margin-bottom: 0px;
 }
 
 .project-title:hover {
@@ -237,4 +248,20 @@ textarea {
 
 .footer {
 	padding-top: 15px;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+       supported by Chrome and Opera */
 }

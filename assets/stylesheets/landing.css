@@ -41,6 +41,7 @@ section h1 {
 
 #landing {
   /*background: Set dynamically in main.js*/
+  background-attachment: scroll;
   transition: background 0.5s linear;
   -webkit-transition: width 2s;
   transition: width 2s;
