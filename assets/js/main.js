@@ -63,7 +63,7 @@ var bgNumber = Math.floor(Math.random() * numOfBgs) + 1;
 // var imageUrl = './assets/backgrounds/bg'+ bgNumber + '.jpg';
 var imageUrl = './assets/backgrounds/bg' + 5 + '.jpg';
 
-
+// DISABLED
 function setBackground() {
   $('#landing').css('background', 'url(' + imageUrl + ')' + 'center center / cover no-repeat');
 }
