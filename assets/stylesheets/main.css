@@ -4,6 +4,14 @@
 	}
 }
 
+/* PREFETCH */
+:root:before {
+	content: url(../backgrounds/bg5.jpg);
+	visibility: hidden;
+	position: absolute;
+	left: -999em;
+}
+
 /*LIGHT THEME*/
 :root {
 	--highlight-color: #a74e4d;
