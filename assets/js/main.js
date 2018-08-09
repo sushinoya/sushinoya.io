@@ -57,24 +57,6 @@ $("#scroll-btn").click(function() {
     }, 600);
 });
 
-// CHANGE BACKGROUND EVERY LOAD
-var numOfBgs = 3;
-var bgNumber = Math.floor(Math.random() * numOfBgs) + 1;
-// var imageUrl = './assets/backgrounds/bg'+ bgNumber + '.jpg';
-var imageUrl = './assets/backgrounds/bg' + 5 + '.jpg';
-
-// DISABLED
-function setBackground() {
-  $('#landing').css('background', 'url(' + imageUrl + ')' + 'center center / cover no-repeat');
-}
-
-// ON EVERY LOAD OF PAGE
-window.onload = initialise;
-
-function initialise() {
-  setBackground();
-}
-
 // CHANGE TO LIGHT VERSION OF IMAGE ON HOVER
 $(function ($) {
     $('.contact-icon').hover(function () {
